@@ -22,7 +22,7 @@ export default {
 
 <style>
 .card {
-    width: 300px;
+    max-width: 300px;
     padding: 10px;
     background: #f3f3f3;
     border-radius: 15px;

@@ -1,15 +1,18 @@
 <template>
   <header-section />
   <character-list />
+  <footer-section />
 </template>
 
 <script>
 import CharacterList from './components/CharacterList.vue'
+import FooterSection from './components/FooterSection.vue'
 import HeaderSection from './components/HeaderSection.vue'
 export default {
   components: {
     HeaderSection,
     CharacterList,
+    FooterSection,
   }
 }
 </script>

@@ -1,13 +1,22 @@
 <template>
   <div class="card">
-    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
-    <h3>Rick Sanchez</h3>
+    <img :src="image" alt="">
+    <h3>{{ name }}</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
   </div>
 </template>
 
 <script>
 export default {
+    props: {
+        name: {
+            type: String,
+            default: 'No name',
+        },
+        image: {
+            type: String,
+        }
+    } 
 }
 </script>
 
@@ -23,7 +32,7 @@ export default {
     transition: all .5s;
 }
 .card:hover{
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 30px rgb(0, 209, 0);
 }
 .card img{
     width: 100%;

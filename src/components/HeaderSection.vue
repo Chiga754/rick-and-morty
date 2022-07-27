@@ -21,8 +21,11 @@ export default {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
+    box-shadow: 0 0 30px #000000;
+    margin: 0 20px 20px;
 }
 h1{
     font-size: 50px;
+    margin-left: 10px;
 }
 </style>
